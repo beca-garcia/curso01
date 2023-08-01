@@ -1,0 +1,41 @@
+/* Media Queries */
+/* Até 768px => OK 
+*/
+
+@media (min-width: 768px) {
+    div.container {
+        /* border: 1px dashed #ffff00; */
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    /* Geral Classes Textos */
+    h1.title {
+        font-size: 32px;
+        line-height: 150%;
+        text-align: center;
+    }
+
+    h2.subtitle {
+        font-size: 24px;
+        line-height: 150%;
+        text-align: center;
+        color: var(--padrao);
+    }
+
+    p.p-principal {
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;    
+    }
+
+    /* Cabeçalho */
+    div.text-box-navigation {
+    padding-block: 5.6rem 0; 
+    }
+    
+    /* Conteúdo Programático */
+    #conteudo-programatico .topico .p-principal {
+        text-align: left;
+    }
+}

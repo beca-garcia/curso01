@@ -1,331 +1,683 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NHQPK97");
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="./assets/images/favicon.ico"
-      type="image/x-icon"
-    />
-    <title>Ágil em Foco</title>
+    <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" type="image/x-icon">
+    <title>Como gerir equipes de alta performance usando agilidade</title>
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Ícones do Font Awesome -->
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media-querie.css" />
+
+    <!-- Biblioteca de Ícones -->
     <script
       src="https://kit.fontawesome.com/745489aff3.js"
       crossorigin="anonymous"
     ></script>
-    <!--  -->
-    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Script Animação AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
-    <!-- cabeçalho -->
-    <header id="header" class="header bg-header">
+     <!-- Google Tag Manager (noscript) -->
+     <noscript
+     ><iframe
+       src="https://www.googletagmanager.com/ns.html?id=GTM-NHQPK97"
+       height="0"
+       width="0"
+       style="display: none; visibility: hidden"
+     ></iframe
+   ></noscript>
+   <!-- End Google Tag Manager (noscript) -->
+    <!-- Cabeçalho -->    
+
+    <header id="header" class="bg-header">
       <div class="container">
-        <nav class="navigation">
-          <!-- <ul class="menu-list">
-            <li class="menu-item"><a class="menu-link" href="#">item 01</a></li>
-            <li class="menu-item"><a class="menu-link" href="#">item 02</a></li>            
-          </ul> -->
-          <!--  -->
-          <img class="logo" src="assets/images/agil-laranja.png" alt="#" />
-          <!--  -->
-          <!-- <ul class="menu-list">
-            <li class="menu-item"><a class="menu-link" href="#">item 03</a></li>
-            <li class="menu-item"><a class="menu-link" href="#">item 04</a></li>
-          </ul>           -->
+        <div class="banner-nova-turma">          
+          <a href="#datas-disponiveis">
+            <h2 class="banner-title">Nova turma disponível</h2>
+          </a>
+        </div>
+
+        <nav class="header-navigation">
+          <figure class="logo">
+            <img
+              class="agil-em-foco"
+              src="./assets/images/logo/logo-laranja.png"
+              alt="logotipo do ágil em foco na cor branca."
+              data-aos="fade-right"
+            />
+          </figure>
+          <div class="social-links">
+            <!-- instagram -->
+            <a
+              href="https://www.instagram.com/agilemfoco/"
+              class="social-link"
+              target="_blank"
+            >
+              <i
+                class="fa-brands fa-instagram social-icon"
+                data-aos="fade-left"
+              ></i>
+            </a>
+            <!-- youtube -->
+            <!-- <a
+              href="https://www.youtube.com/channel/UCAN-HmjypBcoHYI55ydgyIg"
+              class="social-link"
+              target="_blank"
+            >
+              <i
+                class="fa-brands fa-youtube social-icon"
+                data-aos="fade-left"
+              ></i>
+            </a> -->
+            <!-- tiktok -->
+            <a
+              href="https://www.tiktok.com/@agilemfoco?_t=8dMB1sOdKh3&_r=1"
+              class="social-link"
+              target="_blank"
+            >
+              <i
+                class="fa-brands fa-tiktok social-icon"
+                data-aos="fade-left"
+              ></i>
+            </a>
+          </div>
         </nav>
-        <!--  -->
-        <!-- <div class="container-text">
-          <h1 class="title">Venha aprender a gerir equipes de alta perfomance usando agilidade. Explore esse novo universo</h1>
-        </div> -->
+
+        <div class="text-box-navigation">
+          <h1 class="title" data-aos="zoom-in">
+            Quer saber como gerir equipes de <strong class="bgc-destaque">alta performance</strong> usando agilidade?        
+          </h1>
+          <a
+            href="https://forms.gle/PmqzDj9u6bj33xFAA"
+            class="button"
+            target="_blank"
+            >Fazer Incrição</a
+          >
+          <a href="#praticas-ageis"><i class="fa-solid fa-angles-down social-icon"></i></a>
+        </div>
       </div>
     </header>
 
-    <!-- Headline -->
-    <section id="headline">
+    <!-- Seção 01 | O que são Práticas Ágeis -->
+    <section id="praticas-ageis">
       <div class="container">
-        <div class="headline">
-          <h1 class="title">
-            Encontre o equilíbrio entre eficácia e eficiência utilizando
-            agilidade
-          </h1>
+        <!-- subtítulo e parágrafos -->
+        <div class="text-box">
+          <!-- <h2 class="subtitle">Práticas Ágeis</h2> -->
+          <p class="p-principal">Nós criamos o curso “<strong class="destaque">Como gerir equipes de alta performance usando agilidade</strong>" que irá ajudá-lo a responder a esta pergunta. </p>
+          <p class="p-principal">
+            Nosso objetivo é que ao final do curso, você seja capaz de criar e gerir equipes de alta performance, que sejam capazes de responder bem às mudanças, de realizar entregas de qualidade e que estejam em constante evolução.
+          </p>          
         </div>
       </div>
     </section>
 
-    <!-- Separador de Seção -->
-    <section id="sectionSeparation">
+    <!-- Seção 02 | Sobre o Curso  -->
+    <section id="sobre-curso">
       <div class="container">
-        <div class="line">
-          <div class="line-1"></div>
-          <div class="line-2"></div>
-          <div class="line-3"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- O que é o Ágil em Foco -->
-    <section id="agile">
-      <div class="container">
-        <div class="organization-container">
-          <h2 class="subtitle">Ágil em Foco</h2>
-          <p class="p-standart">
-            O Ágil em Foco é uma iniciativa colaborativa, que promove cursos e
-            conteúdos sobre agilidade, voltados para organizações e pessoas
-            interessadas em conhecer ou se aprofundar mais sobre o tema.
-          </p>
-
-          <p class="p-standart">
-            Além disso, contamos com um portfólio de serviços personalizados
-            voltado para empresas, que consiste na realização de treinamentos
-            corporativos, consultorias e mapeamento de processos.
+        <div class="text-box">
+          <h2 class="subtitle">Sobre o Nosso Curso</h2>
+          <p class="p-principal">
+            Neste curso introdutório com carga horária de aproximadamente 3
+            horas, dividido em 2 dias, você irá conhecer toda a base teórica da agilidade para poder
+            começar a atuar junto as suas equipes.
+          </p>          
+          <p class="p-principal">
+            Ao final, você receberá um
+            <strong class="destaque">certificado</strong> de participação.
           </p>
         </div>
-
-        <img class="image" src="assets/images/img-3.png" alt="#" />
       </div>
     </section>
 
-    <!-- Separador de Seção -->
-    <section id="sectionSeparation">
+    <!-- Seção 03 | Como Funciona o Curso - Resumo -->
+    <section id="curso-resumo">
       <div class="container">
-        <div class="line">
-          <div class="line-1"></div>
-          <div class="line-2"></div>
-          <div class="line-3"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Nossa Intenção -->
-    <section id="intention">
-      <div class="container">
-        <div class="organization-container">
-          <h2 class="subtitle">Nossa Intenção</h2>
-          <p class="p-standart">
-            Estamos em constante evolução e buscando a melhoria contínua em
-            nossos serviços.
+        <div class="text-box">
+          <h2 class="subtitle">Como Funciona Nosso Curso?</h2>
+          <p class="p-principal">
+            Este curso foi estruturado com
+            <strong class="destaque">aula teórica</strong> e
+            <strong class="destaque">aula prática</strong> com
+            <strong class="destaque">atividades em grupo</strong> e<strong
+              class="destaque">análises de métricas</strong>. Nosso objetivo é
+            que você <strong class="destaque"> saia do zero </strong> e
+            comece a entender sobre os benefícios que a agilidade pode trazer
+            para a sua empresa.
           </p>
-          <p class="p-standart">
-            Para você, empresário que quer melhorar seus processos internos,
-            entregar valor ao seu cliente, quer que seu time trabalhe bem a
-            eficiência e eficácia nos projetos para sair dentro do prazo e
-            orçamento, vale a pena dar uma olhada com carinho nas práticas
-            ágeis.
-          </p>
-
-          <p class="p-standart">
-            Já você, profissional da área de agilidade ou que gostaria de mudar
-            de carreira e quer se capacitar, adquirir novos conhecimentos,
-            aprender a gerenciar seus times afim deles se tornarem
-            autogerenciáveis, este é o seu lugar.
-          </p>
-        </div>
-        <img class="image" src="assets/images/img-2.png" alt="#" />
-      </div>
-    </section>
-
-    <!-- Separador de Seção -->
-    <section id="sectionSeparation">
-      <div class="container">
-        <div class="line">
-          <div class="line-1"></div>
-          <div class="line-2"></div>
-          <div class="line-3"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Time do Ágil em Foco -->
-    <section id="team">
-      <div class="container">
-        <div class="organization-container">
-          <h2 class="subtitle">Consultoria</h2>
-          <p class="p-standart">
-            Em decorrência do meu trabalho como agile coach e agilista, muitas
-            pessoas me procuravam pedindo sugestões de cursos, materiais
-            voltados para área de agilidade. Diante dessa alta procura, vi que
-            era o momento de começar a dar aulas e criar meu próprio conteúdo.            
-          </p>
-          <p class="p-standart">
-            Ensinar e compartilhar conhecimento sempre foram atividades que me
-            deram muito prazer, o Ágil em Foco é a oportunidade de transformar
-            esse sonho em realidade.
-          </p>
-        </div>
-        <img
-          class="image"
-          src="assets/images/anne-02-com-certificacao.png"
-          alt="#"
-        />
-        <h3>Anne Caroline</h3>
-      </div>
-    </section>
-
-    <!-- Separador de Seção -->
-    <section id="sectionSeparation">
-      <div class="container">
-        <div class="line">
-          <div class="line-1"></div>
-          <div class="line-2"></div>
-          <div class="line-3"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Depoimentos -->
-    <section id="testimonials">
-      <div class="container">
-        <h2 class="subtitle">
-          O que dizem as pessoas que já fizeram nosso curso
-        </h2>
-        <!--  -->
-        <div class="testimonials-cards">
-          <div class="testimonials-card">
-            <div class="estrelas">
-              <i class="fa-solid fa-star estrela"></i>
-              <i class="fa-solid fa-star estrela"></i>
-              <i class="fa-solid fa-star estrela"></i>
-              <i class="fa-solid fa-star estrela"></i>
-              <i class="fa-solid fa-star estrela"></i>
+          <!-- cards -->
+          <div class="cards">
+            <div class="card" data-aos="zoom-in-up">
+              <figure class="container-img">
+                <img
+                  class="img-icone"
+                  src="./assets/icones/aula-teorica.png"
+                  alt="ícone de um cérebro na cor branca com o fundo na cor laranja em formato de balão."
+                />
+              </figure>
+              <p class="p-principal">Aula Teórica</p>
             </div>
-            <p class="p-testimonials">
-              <i class="fa-solid fa-quote-left quote"></i>
-              Um curso muitíssimo interessante! Que ensina na prática a como
-              orientar e trabalhar em prol da equipe! O sistema realmente abre
-              novos universos a quem prática e quer crescer exponencialmente!
-              Obrigado Ágil em Foco!
-              <i class="fa-solid fa-quote-right quote"></i>
+            <!--  -->
+            <div class="card" data-aos="zoom-in-up">
+              <figure class="container-img">
+                <img
+                  class="img-icone"
+                  src="./assets/icones/aula-pratica.png"
+                  alt="ícone de engrenagens na cor branca com o fundo na cor laranja em formato de balão."
+                />
+              </figure>
+              <p class="p-principal">Aula Prática</p>
+            </div>
+            <!--  -->
+            <div class="card" data-aos="zoom-in-up">
+              <figure class="container-img">
+                <img
+                  class="img-icone"
+                  src="./assets/icones/material-complementar.png"
+                  alt="ícone de um foguete na cor branca com o fundo na cor laranja em formato de balão."
+                />
+              </figure>
+              <p class="p-principal">Material Complementar</p>
+            </div>
+            <!--  -->
+            <div class="card" data-aos="zoom-in-up">
+              <figure class="container-img">
+                <img
+                  class="img-icone"
+                  src="./assets/icones/certificado.png"
+                  alt="ícone de um troféu na cor branca com o fundo na cor laranja em formato de balão."
+                />
+              </figure>
+              <p class="p-principal">Certificado de Conclusão</p>
+            </div>
+          </div>
+          <!-- Boão -->
+          <a
+            href="https://forms.gle/PmqzDj9u6bj33xFAA"
+            class="button"
+            target="_blank"
+            >Fazer Incrição</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 04 | Depoimentos -->
+    <section id="depoimentos">
+      <div class="container">
+        <div class="text-box">
+          <h2 class="subtitle">O que dizem as pessoas que já fizeram nosso curso</h2>
+          
+          <!-- Depoimentos -->
+          <div class="cards-depoimento">
+            <div class="card-depoimento" data-aos="zoom-in-down">
+              <div class="estrelas">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <blockquote>
+                <p class="p-principal">
+                  <i class="fa-solid fa-quote-left aspas"></i>Um curso
+                  muitíssimo interessante! Que ensina na prática a como orientar
+                  e trabalhar em prol da equipe! O sistema realmente abre novos
+                  universos a quem prática e quer crescer exponencialmente!
+                  Obrigado Ágil em Foco!<i
+                    class="fa-solid fa-quote-right aspas"
+                  ></i>
+                </p>
+                <cite>
+                  Gabriel Vicente
+                </cite>
+              </blockquote>
+            </div>
+            <!--  -->
+            <div class="card-depoimento" data-aos="zoom-in-down">
+              <div class="estrelas">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <blockquote>
+                <p class="p-principal">
+                  <i class="fa-solid fa-quote-left aspas"></i>Desconhecia essa
+                  ferramenta para utilizar nos processos dentro de uma
+                  instituição e mesmo na minha vida pessoal.Achei agil,
+                  dinamica, a articuladora foi de extrema habilidade e expertise
+                  para transmissão e multiplicação do tema.<i
+                    class="fa-solid fa-quote-right aspas"
+                  ></i>
+                </p>
+                <cite>Edilene Felicissimo</cite>
+              </blockquote>
+            </div>
+            <!--  -->
+            <div class="card-depoimento" data-aos="zoom-in-down">
+              <div class="estrelas">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <blockquote>
+                <p class="p-principal">
+                  <i class="fa-solid fa-quote-left aspas"></i>Ótimo conteúdo
+                  para aqueles que estão iniciando a imersão no mundo Ágil! A
+                  dinâmica apresentada, bem como a didática utilizada facilitou
+                  muito o entendimento a cerca do tema! Parabéns... que venham
+                  os próximos!<i class="fa-solid fa-quote-right aspas"></i>
+                </p>
+                <cite>Thiago Antonini</cite>
+              </blockquote>
+            </div>
+            <!--  -->
+            <div class="card-depoimento" data-aos="zoom-in-down">
+              <div class="estrelas">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <blockquote>
+                <p class="p-principal">
+                  <i class="fa-solid fa-quote-left aspas"></i>O curso foi ótimo!
+                  O conteúdo foi repassado de forma objetiva, esclarecedora, de
+                  fácil entendimento e prático. A mentora é sensacional! Tem uma
+                  boa didática e conduziu super bem este momento, sanando todas
+                  as dúvidas e dando dicas para a prova de certificação do
+                  Scrum. O momento de “mão na massa” foi super criativo e
+                  facilitou o entendimento do conteúdo abordado. Fico feliz pelo
+                  oportunidade de ter participado desta primeira turma do curso.
+                  Superou as minhas expectativas. Super indico para os
+                  profissionais que desejam iniciar nesta área. Parabéns!<i
+                    class="fa-solid fa-quote-right aspas"
+                  ></i>
+                </p>
+                <cite>Letícia Chierighini</cite>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 05 |  Conteúdo Programático -->
+    <section id="conteudo-programatico">
+      <div class="container">
+        <div class="text-box">
+          <h2 class="subtitle">
+            O que você irá aprender no curso
+          </h2>
+          <p class="p-principal">
+            A seguir, estão descritos os tópicos que serão abordados durante o
+            curso.</strong>
+          </p>
+          <!-- Programação -->
+          <div class="topicos">
+            <div class="topico">
+              <h2 class="subtitle">
+                <i class="fa-solid fa-1 numero"></i>
+                <i class="fa-solid fa-circle ponto"></i>
+                O que é Agilidade
+              </h2>
+              <span class="linha"></span>
+              <p class="p-principal">
+                Esta seção irá falar sobre a definição do que é ser ágil, trazendo exemplos práticos do uso da agilidade para execução de atividades e construção de produtos e serviços.
+              </p>
+            </div>
+            <!-- 2 -->
+            <div class="topico">
+              <h2 class="subtitle">
+                <i class="fa-solid fa-2 numero"></i>
+                <i class="fa-solid fa-circle ponto"></i>
+                Manifesto Ágil
+              </h2>
+              <span class="linha"></span>
+              <p class="p-principal">
+                Declaração de princípios que fundamentam o desenvolvimento ágil de software.
+              </p>
+            </div>
+            <!-- 3 -->
+            <div class="topico">
+              <h2 class="subtitle">
+                <i class="fa-solid fa-3 numero"></i>
+                <i class="fa-solid fa-circle ponto"></i>
+                Framework Scrum
+              </h2>
+              <span class="linha"></span>
+              <p class="p-principal">
+                O Scrum é um framework que ajuda pessoas, equipes e organizações a gerarem valor através de soluções adaptativas para problemas complexos.
+              </p>
+            </div>
+            <!-- 4 -->
+            <div class="topico">
+              <h2 class="subtitle">
+                <i class="fa-solid fa-4 numero"></i>
+                <i class="fa-solid fa-circle ponto"></i>
+                Scrum Eventos
+              </h2>
+              <span class="linha"></span>
+              <p class="p-principal">
+                Cada evento no Scrum é uma oportunidade para inspecionar e adaptar o que está sendo feito durante a Sprint.
+              </p>
+            </div>
+            <!-- 5 Scrum Papéis -->
+            <div class="topico">
+              <h2 class="subtitle">
+                <i class="fa-solid fa-5 numero"></i>
+                <i class="fa-solid fa-circle ponto"></i>
+                Scrum Papéis
+              </h2>
+              <span class="linha"></span>
+              <p class="p-principal">
+                Todos os profissionais que fazem parte do Scrum Team, possuem papéis bem definidos, onde cada integrante trará sua contribuição dentro da Sprint. Os times são estruturados e capacitados para gerir o seu próprio trabalho entregando valor a cada entrega para o cliente ou produto.
+              </p>
+            </div>
+            <!-- 6 Scrum Artefatos -->
+            <div class="topico">
+              <h2 class="subtitle">
+                <i class="fa-solid fa-6 numero"></i>
+                <i class="fa-solid fa-circle ponto"></i>
+                Scrum Artefatos
+              </h2>
+              <span class="linha"></span>
+              <p class="p-principal">
+                Toda documentação e incrementos produzidos quando usamos o framework Scrum.
+              </p>
+            </div>
+            <!-- 7 Métricas -->
+            <div class="topico">
+              <h2 class="subtitle">
+                <i class="fa-solid fa-7 numero"></i>
+                <i class="fa-solid fa-circle ponto"></i>
+                Métricas
+              </h2>
+              <span class="linha"></span>
+              <p class="p-principal">
+                Dentre as métricas que um Scrum Master deve dominar para poder analisar os dados e acompanhar o progresso das entregas, temos: O gráfico de Burndown e o Gráfico de Velocity.
+              </p>
+            </div>
+            <!-- 8 Atividades Práticas -->
+            <div class="topico">
+              <h2 class="subtitle">
+                <i class="fa-solid fa-8 numero"></i>
+                <i class="fa-solid fa-circle ponto"></i>
+                Atividades Práticas
+              </h2>
+              <span class="linha"></span>
+              <p class="p-principal">
+                Todos participarão de uma simulação de uma Sprint, onde cada um terá um papel dentro do Time Scrum e será praticado todo o conteúdo teórico para fixação. Além de atividades de análise de graficos de Burndown e Velocity.
+              </p>
+            </div>
+          </div>
+          <!-- botão de interesse -->
+          <a
+            href="https://forms.gle/PmqzDj9u6bj33xFAA"
+            class="button"
+            target="_blank"
+            >Fazer Incrição</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 06 |  Anne Caroline -->
+    <section id="sobre-anne">
+      <div class="container">
+        <div class="text-box">
+          <h2 class="subtitle">Conheça sobre sua mentora</h2>
+          <p class="p-principal">
+            Nosso curso,
+            será ministrado por Anne Caroline, que já atua no mercado de
+            agilidade há mais de 5 anos.
+          </p>
+
+          <div class="container-anne">
+            <figure class="container-anne-foto" data-aos="flip-left">
+              <img
+                class="anne-img"
+                src="./assets/images/anne/agil-em-foco02.png"
+                alt="Imagem de Anne Caroline com os braços cruzados usando um blusa preta de manga longas."
+              />
+            </figure>
+            <h2 class="subtitle">Anne Caroline Melo Santos</h2>
+            <figure class="certificacoes">
+              <img
+                class="certificacao"
+                src="./assets/images/certificacoes/certificacoes.png"
+                alt="imagems com os adesivos de todas as certificações que Anne tirou voltadas para métodos ágeis"
+              />
+            </figure>
+            <!--  -->
+            <p class="p-principal">
+              Mestra em Ciência da Computação pela Universidade Federal de
+              Sergipe (UFS); Palestrante e Especialista na Adoção de Práticas
+              Ágeis e na Gestão de Equipes Multidisciplinares.
             </p>
-            <p class="name-testimonials">Gabriel Vicente</p>
+            <p class="p-principal">
+              Atua como Agile Coach em uma Instituição Financeira de Crédito,
+              ajudando a treinar pessoas e times corporativos na adoção das
+              práticas ágeis, para garantir resultados efetivos na utilização
+              desses métodos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 07 | Investimento -->
+    <section id="investimento">
+      <div class="container">
+        <div class="text-box">
+          <h2 class="subtitle">Investimento</h2>
+          <p class="p-principal">
+            Investir em conhecimento é o primeiro passo para alcançar seus
+            sonhos. Para você ter acesso ao nosso curso, seu investimento
+            inicial será de:
+          </p>
+
+          <div class="card-investimento" data-aos="flip-down">
+            <figure class="container-img">
+              <img
+                class="img-icone"
+                src="./assets/icones/investimento-02.png"
+                alt="ícone de notas de dinheiro na cor branca com o fundo na cor laranja em formato de balão."
+              />
+            </figure>
+            <h2 class="subtitle">
+              R$ 129,90
+            </h2>            
+            <p class="p-principal">
+              Formas de pagamento: PIX ou Transferência Bancária.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 08 | Datas Disponíveis -->
+    <section id="datas-disponiveis">
+      <div class="container">
+        <div class="text-box">
+          <h2 class="subtitle">Quando será o nosso curso</h2>
+          <p class="p-principal">
+            Turmas com no
+            <strong class="destaque">máximo 06 alunos</strong> para que todos
+            possam aproveitar o conteúdo e
+            <strong class="destaque">terem a atenção plena da mentora</strong>.
+          </p>
+
+          <div class="cards">
+            <div class="card-novas-turmas" data-aos="flip-down">
+              <figure class="container-img">
+                <img
+                  class="img-icone"
+                  src="./assets/icones/turmas-abertas.png"
+                  alt="ícone de um astronauta na cor branca com o fundo na cor laranja em formato de balão."
+                />
+              </figure>
+              <i class="fa-solid fa-screen-users"></i>
+              <p class="p-principal">Próxima Turma!</p>              
+              <h2 class="subtitle">
+                22 e 23/08
+              </h2>
+              <h3>19:00h às 20:30 horas</h3>
+              <p class="p-secundario">100% online</p>
+              <!-- <i class="fa-brands fa-instagram social-icon"></i> -->
+            </div>
+          </div>
+          <!-- botão de interesse -->
+          <a
+            href="https://forms.gle/PmqzDj9u6bj33xFAA"
+            class="button"
+            target="_blank"
+            >Fazer Incrição</a
+          >
+          <!-- <a
+            href="https://forms.gle/TD7PbaqXj5CE8yQm6"
+            class="button"
+            target="_blank"
+            >Tenho interesse</a
+          > -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 09 | Dúvidas -->
+    <section id="duvidas">
+      <div class="container">
+        <div class="text-box">
+          <h2 class="subtitle">Para quem é este curso?</h2>
+          <!-- lista de dúvidas -->
+          <ul class="lista">
+            <li class="item-lista">
+              <i class="fa-solid fa-check-double"></i>
+              Para você que quer melhorar a performance das suas equipes
+            </li>
+            <li class="item-lista">
+              <i class="fa-solid fa-check-double"></i>
+              Para você que quer aumentar seu conhecimento adquirindo uma nova
+              soft skill
+            </li>
+            <li class="item-lista">
+              <i class="fa-solid fa-check-double"></i>
+              Para você, profissional da área de tecnologia
+            </li>
+            <li class="item-lista">
+              <i class="fa-solid fa-check-double"></i>
+              Para você que já trabalha na área e quer relembrar alguns
+              conceitos
+            </li>
+          </ul>
+          <!-- botão de interesse -->
+          <a
+            href="https://forms.gle/PmqzDj9u6bj33xFAA"
+            class="button"
+            target="_blank"
+            >Fazer Incrição</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+      <div class="container">
+        <nav class="footer-navigation">
+          <figure class="logo">
+            <img
+              class="agil-em-foco"
+              src="./assets/images/logo/logo-laranja.png"
+              alt="logotipo do ágil em foco na cor branca."
+            />
+          </figure>
+          <div class="social-links">
+            <!-- instagram -->
+            <a
+              href="https://www.instagram.com/agilemfoco/"
+              class="social-link"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram social-icon"></i>
+            </a>
+            <!-- youtube -->
+            <!-- <a
+              href="https://www.youtube.com/channel/UCAN-HmjypBcoHYI55ydgyIg"
+              class="social-link"
+              target="_blank"
+            >
+              <i class="fa-brands fa-youtube social-icon"></i>
+            </a> -->
+            <!-- tiktok -->
+            <a
+              href="https://www.tiktok.com/@agilemfoco?_t=8dMB1sOdKh3&_r=1"
+              class="social-link"
+              target="_blank"
+            >
+              <i class="fa-brands fa-tiktok social-icon"></i>
+            </a>
           </div>
           <!--  -->
-          <div class="testimonials-card">
-            <div class="estrelas">
-              <i class="fa-solid fa-star estrela"></i>
-              <i class="fa-solid fa-star estrela"></i>
-              <i class="fa-solid fa-star estrela"></i>
-              <i class="fa-solid fa-star estrela"></i>
-              <i class="fa-solid fa-star estrela"></i>
-            </div>
-            <p class="p-testimonials">
-              <i class="fa-solid fa-quote-left quote"></i>
-              Desconhecia essa ferramenta para utilizar nos processos dentro de
-              uma instituição e mesmo na minha vida pessoal.Achei agil,
-              dinamica, a articuladora foi de extrema habilidade e expertise
-              para transmissão e multiplicação do tema.
-              <i class="fa-solid fa-quote-right quote"></i>
+          <div class="footer-text">
+            <p class="p-terciario">
+              Feito com carinho <i class="fa-solid fa-heart coracao"></i> para
+              você.
             </p>
-            <p class="name-testimonials">Edilene Felicissimo</p>
+            <p class="p-terciario">Todos os direitos reservados</p>
+            <p class="p-terciario">Ágil em Foco | 2023</p>
           </div>
-          <!--  -->
-          <div class="testimonials-card">
-            <div class="estrelas">
-              <i class="fa-solid fa-star estrela"></i>
-              <i class="fa-solid fa-star estrela"></i>
-              <i class="fa-solid fa-star estrela"></i>
-              <i class="fa-solid fa-star estrela"></i>
-              <i class="fa-solid fa-star estrela"></i>
-            </div>
-            <p class="p-testimonials">
-              <i class="fa-solid fa-quote-left quote"></i>
-              Ótimo conteúdo para aqueles que estão iniciando a imersão no mundo
-              Ágil! A dinâmica apresentada, bem como a didática utilizada
-              facilitou muito o entendimento a cerca do tema! Parabéns... que
-              venham os próximos!
-              <i class="fa-solid fa-quote-right quote"></i>
-            </p>
-            <p class="name-testimonials">Thiago Antonini</p>
-          </div>
-          <!--  -->
-          <div class="testimonials-card">
-            <div class="estrelas">
-              <i class="fa-solid fa-star estrela"></i>
-              <i class="fa-solid fa-star estrela"></i>
-              <i class="fa-solid fa-star estrela"></i>
-              <i class="fa-solid fa-star estrela"></i>
-              <i class="fa-solid fa-star estrela"></i>
-            </div>
-            <p class="p-testimonials">
-              <i class="fa-solid fa-quote-left quote"></i>
-              O curso foi ótimo! O conteúdo foi repassado de forma objetiva,
-              esclarecedora, de fácil entendimento e prático. A mentora é
-              sensacional! Tem uma boa didática e conduziu super bem este
-              momento, sanando todas as dúvidas e dando dicas para a prova de
-              certificação do Scrum. O momento de “mão na massa” foi super
-              criativo e facilitou o entendimento do conteúdo abordado. Fico
-              feliz pelo oportunidade de ter participado desta primeira turma do
-              curso. Superou as minhas expectativas. Super indico para os
-              profissionais que desejam iniciar nesta área. Parabéns!
-              <i class="fa-solid fa-quote-right quote"></i>
-            </p>
-            <p class="name-testimonials">Letícia Chierighini</p>
-          </div>
-        </div>
+        </nav>
       </div>
-    </section>
+    </footer>
 
-    <!-- Separador de Seção -->
-    <section id="sectionSeparation">
-      <div class="container">
-        <div class="line">
-          <div class="line-1"></div>
-          <div class="line-2"></div>
-          <div class="line-3"></div>
-        </div>
-      </div>
-    </section>
+    <!-- Botão do WhatsApp -->
+    <a
+      href="https://api.whatsapp.com/send?phone=5579981351534&text=Olá!%20Gostaria%20de%20conversar%20com%20alguém%20do%20Ágil%20em%20Foco!"
+      class="btn-whatsapp"
+      target="_blank"
+    >
+      <img
+        class="zap"
+        src="./assets/icones/whatssapp.svg"
+        alt="logo do whatsapp na cor verde."
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom-center"
+        data-aos-delay="300"
+      />
+      <span class="tooltip-text">Fale conosco</span>
+    </a>
 
-    <!-- Empresas atendidas -->
-
-    <!-- Contatos -->
-    <section id="contact">
-      <div class="container">
-        <div class="organization-container">
-          <h2 class="subtitle">Contatos</h2>
-          <p class="p-standart">
-            Se alguma coisa não ficou clara, será um prazer falar com você. Escolha uma das formas de contato abaixo. Estaremos te esperando.
-          </p>
-        </div>
-        <!--  -->
-        <div class="contact-cards">
-          <!-- E-mail -->
-          <div class="contact-card">
-            <i class="fa-solid fa-envelope"></i>
-            <p class="p-contact">Se preferir mande um e-mail para nós.</p>
-            <a href="#">Enviar e-mail
-              <i class="fa-regular fa-paper-plane"></i></a>
-          </div>
-          <!-- Zap -->
-          <div class="contact-card">
-            <i class="fa-brands fa-whatsapp"></i>
-            <p class="p-contact">Se preferir entre em contato pelo whatsapp</p>
-            <a href="#">Iniciar conversa
-              <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Texto Animado  -->
-    <!-- <section id="animated-text" class="section">
-      <div class="container">
-        <div class="animated-text">
-            <h2 class="estatic-text">Agilidade é</h2>
-            <ul class="dinamic-text">
-              <li><span>YouTuber</span></li>
-              <li><span>Designer</span></li>
-              <li><span>Desenvolvedor</span></li>
-              <li><span>Freelancer</span></li>
-            </ul>
-        </div>
-      </div>
-    </section> -->
+    <!-- Scripts -->
+    <script src="./js/script.js"></script>
   </body>
 </html>

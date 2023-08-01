@@ -2,315 +2,556 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    list-style: none;
-    text-decoration: none;
 }
 
+/* variáveis */
 :root {
-    --header-height: 10rem;
-    --body: #FFFFFF;
-    --body-color: #000000;
+    /* cores de background */
+    --body: #000000;
+    --button: #fb5607;
+
+    /* cores de texto */
+    --body-color: #ffffff;
+    --light-white: #ffffff;
+    --dark-black: #000000;
+    --padrao: #fb5607;
+    --destaque: #fb5607;
+    --coracao: #ff0000;
+
+    /* botão e ícones */
+    --button-color: #fb5607;
+    --icone: #ffffff;
+    --estrelas: #ffe600;
+    --icone-gradient: linear-gradient(45deg, #fb5607 34%, #ffe600 94%);
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; /* 10px */
+    scroll-behavior: smooth;
 }
 
 body {
-    position: relative;
+    font-family: 'Montserrat', sans-serif;
     background-color: var(--body);
     color: var(--body-color);
-    --line-color01: #d25215;
-    --line-color02: #fb5607;
-    --estrela: #f69e18; 
-    --quote: #fb5607;
-    --testimonial-button: #000000;
-    --testimonial-bg: #fb5607;
-    --contact-icon:#ea591a; 
+    position: relative;
+    scroll-behavior: smooth;
 }
 
-/* Tags */
+/* Geral Tags */
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
 section {
-    padding-block: 2rem;
-    /* border: 1px dashed darkmagenta; */
+    padding-block: 4rem;
 }
 
-/* Classes */
+/* Geral Classes */
 .container {
-    /* border: 1px solid green; */
     width: 80%;
     margin: 0 auto;
 }
 
-
-/* Imagens e Ícones */
-.logo {
-    width: 12%;
-}
-
-.image {
-    width: 100%;
-}
-
-/* Separador de Seção */
-.line {
+.text-box {
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
-}
-
-.line-1 {
-    width: 1.6rem;
-    height: 1.6rem;
-    border-radius: 50%;
-    background: var(--line-color01);
-}
-
-.line-2 {
-    width: 22.4rem;
-    height: 2px;
-    background: var(--line-color02);
-}
-
-.line-3 {
-    width: 16.8rem;
-    height: 2px;
-    background: var(--line-color02);
-}
-/* ******************************* */
-
-
-
-/* ******************************** */
-.header {
-    /* border: 1px dashed darkblue; */
-    height: 7.2rem;
-    display: flex;
     align-items: center;
-}
-
-.navigation {
-    /* border: 1px solid green; */
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.menu-list {
-    border: 1px solid purple;
-    display: flex;
-    align-items: center;
+    justify-content: center;
     gap: 2.4rem;
 }
 
-.menu-item {
-    font-size: 1.6rem;
+.destaque {
+    color: var(--destaque);
+    /* ver como animar essa propriedade */
 }
 
-.menu-link {
-    color: #474344;
-    font-weight: 500;
+/* imagens */
+.agil-em-foco {
+    width: 4.8rem; /* 48px */
 }
 
-/* ******************************** */
+.img-icone {
+    width: 8.8rem;
+}
+
+/* ícones  */
+.social-icon {
+    font-size: 2.4rem;   
+    color: var(--icone); 
+    transition: transform 0.2s;
+}
+
+.social-icon:hover {
+    color: var(--padrao);
+    transform: scale(1.2)
+}
+
+.estrelas {
+    color: var(--estrelas);
+    font-size: 1.6rem;   
+}
+
+.aspas {
+    color: var(--padrao);
+    font-size: 0.8rem;
+    padding-inline: 0.2rem;
+}
+
+/* Geral Classes Textos */
 .title {
-    font-size: 2.8rem;
-    font-weight: 500;
+    font-size: 32px;
+    line-height: 150%;
     text-align: center;
-    text-shadow: 1px 1px 2px #F2F2F2;
 }
 
 .subtitle {
-    font-size: 2.4rem;
-    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
     text-align: center;
-    text-shadow: 1px 1px 2px #F2F2F2;
+    color: var(--padrao);
 }
 
-.p-standart {
-    font-size: 1.6rem;
-    font-weight: 300;
-    text-align: justify;
+.p-principal {
+    font-size: 16px;
     line-height: 150%;
+    text-align: center;    
 }
 
-/* O que é o Ágil em Foco  */
-.organization-container .subtitle {
-    margin-bottom: 1.6rem;
-}
-
-.organization-container .p-standart::first-letter {
-    font-size: 2.4rem;
-    font-weight: 400;
-}
-
-.organization-container .p-standart {
-    margin-bottom: 0.8rem;
-}
-
-/* Depoimentos */
-.testimonials-cards {
+/* Botões */
+.button {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 2.4rem;
-    margin-block: 2.4rem;
-}
-
-.testimonials-card {
-    width: 90%;
-    border-radius: 16px;
-    padding: 1.6rem;
-    box-shadow: 1px 1px 1px black;
-}
-
-.estrela {
-    color: var(--estrela);
-    font-size: 1.6rem;
-    margin-bottom: 0.8rem;
-}
-
-.quote {
-    color: var(--quote);
-}
-
-.p-testimonials {
-    font-size: 1.6rem;
-}
-
-.name-testimonials {
-    font-style: italic;
-    font-size: 1rem;
-    font-weight: 700;
-    margin-top: 0.8rem;
-}
-
-/* Contact */
-.contact-cards {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 2.4rem;
-    margin-block: 2.4rem;
-}
-
-.contact-card {
-    width: 80%;
-    border-radius: 16px;
-    height: 16.8rem;
-    padding: 1.6rem;
-    box-shadow: 1px 1px 1px black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-}
-
-.fa-envelope,
-.fa-whatsapp {
-    color: var(--contact-icon);
-    font-size: 3.2rem;
-}
-
-.p-contact {
-    font-size: 1.6rem;
-    font-weight: 300;
-    text-align: center;
-}
-
-.contact-card a {
+    border: 1px solid var(--button-color);
+    background-color: var(--button);
+    border-radius: 1rem;
+    width: 24rem;
+    height: 5.6rem;
     font-size: 1.6rem;
     font-weight: 500;
-    color: var(--contact-icon);
+    color: var(--light-white);
+    animation: botaoAnimado 0.5s infinite alternate;
 }
 
+@keyframes botaoAnimado {
+    from {
+        transform: translateZ(0) scale(1);
+    }
+    to {
+        transform: translateZ(-8px) scale(1.1);
+    }    
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-section {
-    padding-top: calc(4rem + var(--header-height))
-} */
-
-/* Header */
-/* header {
-    position: fixed;
-    height: var(--header-height);
+/* Cards */
+.cards {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid #b3c8e7;
-    box-shadow: 0 2px 2px #b3c8e7;
+    gap: 1.6rem;
 }
 
-.navigation {
-    border: 1px solid blue;
+/* Cabeçalho */
+.banner-nova-turma {
+    border: 1px dashed yellow;
+    background-color: #ffe600;
+    border-radius: 1rem;
+    padding-block: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    animation: banner 0.5s infinite alternate;
+
+}
+
+@keyframes banner {
+    from {
+        transform: translateZ(0) scale(0.8);
+    }
+    to {
+        transform: translateZ(-8px) scale(1);
+    }       
+}
+
+.banner-title {
+    font-size: 3.2rem;
+    text-align: center;
+    color: #000000;
+}
+
+
+#header {
+    padding-block: 2rem 4rem;
+}
+
+.bg-header {
+    position: relative;
+}
+
+.bg-header::before {
+    content: "";
+    display: block;
+    background-image: linear-gradient(to bottom, #0000001a, rgb(0, 0, 0)), url("../assets/images/banner/mulher_animada.jpeg");
+    position: absolute;    
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    opacity: 0.5;
+}
+
+/* Navegação */
+.header-navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
-} */
-
-/* .logo {
-    width: 15%;
 }
 
-.menu {
-    border: 1px solid red;
-}
-
-.menu-lista {
-    border: 1px solid purple;
+.social-links {
     display: flex;
-    align-items: center;
-    gap: 1rem;
+    gap: 1.6rem;
 }
 
-.menu-item {
+.text-box-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 3.2rem;
+    padding-block: 3.2rem;  
+}
+
+.text-box-navigation .social-icon {
+    background-image: var(--icone-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+h1 .bgc-destaque {
+    background-color: var(--destaque);
+}
+
+/* Seção 03 | Como Funciona Nosso Curso */
+.card {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+    border-radius: 0.8rem;
+    background-color: var(--light-white);
+    width: 25.6rem;
+    padding: 2.4rem;
+} 
+
+.card:hover {
+    box-shadow: 4px 4px 8px var(--padrao);
+}
+
+.card .p-principal {
+    color: var(--dark-black);
+    font-weight: 700;
+}
+
+#curso-resumo .text-box {
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+/* Seção 04 | Depoimentos */
+.cards-depoimento {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.6rem;
+}
+
+.card-depoimento {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    border-radius: 0.8rem;
+    background-color: var(--light-white);
+    color: var(--dark-black);
+    width: 29rem;
+    padding: 0.8rem;
+}
+
+.card-depoimento:hover {
+    box-shadow: 4px 4px 8px var(--estrelas) ;
+}
+
+blockquote p {
+    font-weight: 500;            
+}
+
+blockquote cite {
+    font-weight: 700;
     font-size: 1.6rem;
 }
 
-.menu-item a {
-    color: black;
-    font-weight: 500;
+/* Seção 05 | Conteúdo Programático */
+#conteudo-programatico {
+    background-color: var(--body-color);    
 }
 
-.open-menu,
-.close-menu {
+#conteudo-programatico .text-box {
+    justify-content: center;
+    align-items: center;
+}
+
+#conteudo-programatico p {
+    color: var(--dark-black);
+}
+
+.topicos {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-block: 1.6rem;
+}
+
+.topico .subtitle {
+    text-align: left;
+    color: var(--dark-black);
+}
+
+.numero {
+    font-size: 2.4rem;
+}
+
+.ponto {
+    font-size: 0.8rem;
+}
+
+.linha {
+    border-bottom: 2px solid var(--destaque);
+    border-radius: 50%;
+    margin-block: 1rem;
+    width: 15rem;
+    display: block;
+}
+
+/* Seção 06 | Anne Caroline */
+
+.container-anne p {
+    margin-bottom: 2.4rem;
+}
+
+.container-anne p:last-child {
+    margin-bottom: 0;
+}
+
+.container-anne-foto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block:1.6rem ;
+}
+
+.anne-img {
+    width: 32.8rem;
+}
+
+.certificacoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block:1.6rem;
+}
+
+.certificacao {
+    width: 30.4rem;
+}
+
+/* Seção 07 | Investimento */
+#investimento .text-box {
+    justify-content: center;
+    align-items: center;
+}
+
+.card-investimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    border-radius: 0.8rem;
+    background-color: var(--light-white);
+    color: var(--dark-black);
+    width: 25.6rem;
+    padding: 2.4rem;
+}
+
+.card-investimento:hover {
+    box-shadow: 4px 4px 8px var(--padrao);
+}
+
+.card-investimento .subtitle {
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: var(--destaque);
+}
+
+.card-investimento .p-principal {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.numeros i {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.numeros i.ponto {
+    font-size: 0.8rem;
+}
+
+/* Seção 08 | Datas Disponíveis */
+.card-novas-turmas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    border-radius: 0.8rem;
+    background-color: var(--light-white);
+    color: var(--dark-black);
+    width: 27.2rem;
+    padding: 2.4rem;
+}
+
+.card-novas-turmas:hover {
+    box-shadow: 4px 4px 8px var(--padrao);
+}
+
+.card-novas-turmas .p-principal {
+    font-weight: 700;
     font-size: 3.2rem;
 }
 
-.close-menu {
-    display: none;
+.card-novas-turmas .subtitle {
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: var(--destaque);
+}
+
+.card-novas-turmas h3 {
+    font-weight: 500;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.card-novas-turmas .p-secundario {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--padrao);
+}
+
+/* .card-novas-turmas .social-icon {
+    color: var(--destaque);
+    font-size: 4rem;
 } */
 
-/* Apresentação */
+/* Seção 09 | Para quem é este curso */
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.lista li {
+    font-size: 1.6rem;
+}
+
+.lista li i {
+    background-image: var(--icone-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-right: 0.8rem;
+    font-size: 1.6rem;
+}
+
+#duvidas .p-secundario {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+/* Seção 10 | Rodapé */
+
+.footer-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+    padding: 2.4rem;
+}
+
+.footer-text {
+    text-align: center;
+}
+
+.coracao {
+    color: var(--coracao);
+    font-size: 0.8rem;
+    animation: coracaoBatendo 0.4s infinite alternate;
+}
+
+@keyframes coracaoBatendo {
+    from {
+        transform: translateZ(0) scale(1);
+    }
+    to {
+        transform: translateZ(-8px) scale(1.3);
+    }    
+}
+
+/* Seção 11 | Botão do WhatsApp */
+.btn-whatsapp {
+    position: fixed;
+    bottom: 1.6rem;
+    right: 2.4rem;
+    z-index: 99;
+}
+
+.btn-whatsapp img {
+    max-width: 5.6rem;
+    transition: transform 0.4s;
+}
+
+.btn-whatsapp img:hover {
+    transform: scale(1.1);
+}
+
+.btn-whatsapp .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    width: 10.4rem;
+    top: 1.6rem;
+    left: -12rem;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    background-color: var(--destaque);
+    color: var(--light-white);
+    font-weight: 700;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.btn-whatsapp:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
