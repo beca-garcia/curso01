@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --header-height: 10rem;
+    --body: #FFFFFF;
+    --body-color: #000000;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    background-color: var(--body);
+    color: var(--body-color);
+    --line-color01: #d25215;
+    --line-color02: #fb5607;
+    --estrela: #f69e18; 
+    --quote: #fb5607;
+    --testimonial-button: #000000;
+    --testimonial-bg: #fb5607;
+    --contact-icon:#ea591a; 
+}
+
+/* Tags */
+section {
+    padding-block: 2rem;
+    /* border: 1px dashed darkmagenta; */
+}
+
+/* Classes */
+.container {
+    /* border: 1px solid green; */
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* Imagens e Ícones */
+.logo {
+    width: 12%;
+}
+
+.image {
+    width: 100%;
+}
+
+/* Separador de Seção */
+.line {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.line-1 {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background: var(--line-color01);
+}
+
+.line-2 {
+    width: 22.4rem;
+    height: 2px;
+    background: var(--line-color02);
+}
+
+.line-3 {
+    width: 16.8rem;
+    height: 2px;
+    background: var(--line-color02);
+}
+/* ******************************* */
+
+
+
+/* ******************************** */
+.header {
+    /* border: 1px dashed darkblue; */
+    height: 7.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu-list {
+    border: 1px solid purple;
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.menu-item {
+    font-size: 1.6rem;
+}
+
+.menu-link {
+    color: #474344;
+    font-weight: 500;
+}
+
+/* ******************************** */
+.title {
+    font-size: 2.8rem;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 1px 1px 2px #F2F2F2;
+}
+
+.subtitle {
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 1px 1px 2px #F2F2F2;
+}
+
+.p-standart {
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 150%;
+}
+
+/* O que é o Ágil em Foco  */
+.organization-container .subtitle {
+    margin-bottom: 1.6rem;
+}
+
+.organization-container .p-standart::first-letter {
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+.organization-container .p-standart {
+    margin-bottom: 0.8rem;
+}
+
+/* Depoimentos */
+.testimonials-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+    margin-block: 2.4rem;
+}
+
+.testimonials-card {
+    width: 90%;
+    border-radius: 16px;
+    padding: 1.6rem;
+    box-shadow: 1px 1px 1px black;
+}
+
+.estrela {
+    color: var(--estrela);
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+}
+
+.quote {
+    color: var(--quote);
+}
+
+.p-testimonials {
+    font-size: 1.6rem;
+}
+
+.name-testimonials {
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 0.8rem;
+}
+
+/* Contact */
+.contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+    margin-block: 2.4rem;
+}
+
+.contact-card {
+    width: 80%;
+    border-radius: 16px;
+    height: 16.8rem;
+    padding: 1.6rem;
+    box-shadow: 1px 1px 1px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.fa-envelope,
+.fa-whatsapp {
+    color: var(--contact-icon);
+    font-size: 3.2rem;
+}
+
+.p-contact {
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.contact-card a {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--contact-icon);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+section {
+    padding-top: calc(4rem + var(--header-height))
+} */
+
+/* Header */
+/* header {
+    position: fixed;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #b3c8e7;
+    box-shadow: 0 2px 2px #b3c8e7;
+}
+
+.navigation {
+    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+/* .logo {
+    width: 15%;
+}
+
+.menu {
+    border: 1px solid red;
+}
+
+.menu-lista {
+    border: 1px solid purple;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu-item {
+    font-size: 1.6rem;
+}
+
+.menu-item a {
+    color: black;
+    font-weight: 500;
+}
+
+.open-menu,
+.close-menu {
+    font-size: 3.2rem;
+}
+
+.close-menu {
+    display: none;
+} */
+
+/* Apresentação */
