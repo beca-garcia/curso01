@@ -66,7 +66,7 @@ section {
 }
 
 .destaque {
-    color: var(--destaque);
+    color: var(--destaque);    
     /* ver como animar essa propriedade */
 }
 
@@ -195,7 +195,7 @@ section {
 .bg-header::before {
     content: "";
     display: block;
-    background-image: linear-gradient(to bottom, #0000001a, rgb(0, 0, 0)), url("../assets/images/banner/mulher_animada.jpeg");
+    background-image: linear-gradient(to bottom, #0000001a, rgb(0, 0, 0)), url("../assets/images/banner/mulher_animada.webp");
     position: absolute;    
     left: 0;
     top: 0;
@@ -237,6 +237,8 @@ section {
 
 h1 .bgc-destaque {
     background-color: var(--destaque);
+    padding-inline: 0.8rem;
+    border-radius: 0.8rem;
 }
 
 /* Seção 03 | Como Funciona Nosso Curso */
@@ -283,7 +285,7 @@ h1 .bgc-destaque {
     border-radius: 0.8rem;
     background-color: var(--light-white);
     color: var(--dark-black);
-    width: 29rem;
+    width: 24.8rem;
     padding: 0.8rem;
 }
 
@@ -343,6 +345,10 @@ blockquote cite {
 }
 
 /* Seção 06 | Anne Caroline */
+#sobre-anne .text-box {
+    justify-content: center;
+    align-items: center;
+}
 
 .container-anne p {
     margin-bottom: 2.4rem;
@@ -360,7 +366,8 @@ blockquote cite {
 }
 
 .anne-img {
-    width: 32.8rem;
+    width: 24.8rem;
+    height: auto;
 }
 
 .certificacoes {
@@ -371,7 +378,7 @@ blockquote cite {
 }
 
 .certificacao {
-    width: 30.4rem;
+    width: 24.8rem;
 }
 
 /* Seção 07 | Investimento */
@@ -389,7 +396,7 @@ blockquote cite {
     border-radius: 0.8rem;
     background-color: var(--light-white);
     color: var(--dark-black);
-    width: 25.6rem;
+    width: 24.8rem;
     padding: 2.4rem;
 }
 
@@ -427,7 +434,7 @@ blockquote cite {
     border-radius: 0.8rem;
     background-color: var(--light-white);
     color: var(--dark-black);
-    width: 27.2rem;
+    width: 24.8rem;
     padding: 2.4rem;
 }
 

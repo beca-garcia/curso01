@@ -38,4 +38,24 @@
     #conteudo-programatico .topico .p-principal {
         text-align: left;
     }
+
+    /* Seção 04 | Depoimentos */
+    .cards-depoimento .cards-depoimento {
+        width: 32rem;
+    }
+
+    /* Seção 06 | Anne Caroline */
+    .container-anne-foto .anne-img {
+        width: 32rem;
+    }
+
+    /* Seção 08 | Datas Disponíveis */
+    .cards .card-novas-turmas {
+        width: 32.8rem;
+    }
+
+
+    
+
+
 }
