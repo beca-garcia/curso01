@@ -80,15 +80,8 @@ section {
 }
 
 /* ícones  */
-.social-icon {
-    font-size: 2.4rem;   
-    color: var(--icone); 
-    transition: transform 0.2s;
-}
-
-.social-icon:hover {
-    color: var(--padrao);
-    transform: scale(1.2)
+.icone-rede-social {
+    width: 2.4rem;
 }
 
 .estrelas {
@@ -217,7 +210,16 @@ section {
 
 .social-links {
     display: flex;
+    align-items: center;
     gap: 1.6rem;
+}
+
+.icone-rede-social {    
+    transition: transform 0.2s;
+}
+
+.icone-rede-social:hover {
+    transform: scale(1.2)
 }
 
 .text-box-navigation {
